@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 17 Gru 2019, 10:52
+-- Czas generowania: 17 Gru 2019, 11:01
 -- Wersja serwera: 10.1.31-MariaDB
 -- Wersja PHP: 7.2.4
 
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `iiiti`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `menu`
+--
+
+CREATE TABLE `menu` (
+  `indeks` int(11) NOT NULL,
+  `nazwa` text CHARACTER SET latin1 NOT NULL,
+  `link` text CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Zrzut danych tabeli `menu`
+--
+
+INSERT INTO `menu` (`indeks`, `nazwa`, `link`) VALUES
+(1, 'Start', 'index.php'),
+(3, 'Moja szkoÅ‚a', 'http://zs1goleniow.edu.pl'),
+(0, 'Dodaj element', 'http://localhost/3ti/strona_baza/add_menu.php'),
+(0, 'Kasowanie menu', 'co_del_menu.php');
 
 -- --------------------------------------------------------
 
